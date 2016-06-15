@@ -5,14 +5,14 @@
 .navbar-default .navbar-nav>li>a:hover
 {
   color:#eee;
-  background-color:#a3a3b1  ;
+  background-color:#23527c  ;
 }
 
 /*!TO BE FIXED!*/
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
 {
   color:#eee;
-  background-color:#a3a3b1 ;
+  background-color:#23527c ;
 }
 .navbar
 {
@@ -37,4 +37,27 @@
 .heading-sub-title
 {
    font-size:16px;
+  color:#23527c;
 }
+.fa-6x
+{
+	font-size:80px;
+}
+.round-anchor
+{
+  padding-top:32px;
+}
+.round-anchor a:link
+{
+	color:#444;
+}
+.round-anchor a:hover
+{
+	color:#23527c;
+}
+.round-anchor a:active
+{
+	color:#444;
+}
+
+
