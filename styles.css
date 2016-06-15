@@ -1,36 +1,40 @@
-@import url(http://fonts.googleapis.com/css?family=Antic+Slab);
-
-html,body {
-  height:100%;
+.navbar-brand
+{
+  padding:0px 15px 0px 15px !important;
 }
-
-h1 {
-  font-family: 'Antic Slab', serif;
-  font-size:80px;
-  color:#DDCCEE;
-}
-
-.lead {
-	color:#DDCCEE;
-}
-
-
-/* Custom container */
-.container-full {
-  margin: 0 auto;
-  width: 100%;
-  min-height:100%;
-  background-color:#110022;
+.navbar-default .navbar-nav>li>a:hover
+{
   color:#eee;
-  overflow:hidden;
+  background-color:#a3a3b1  ;
 }
 
-.container-full a {
-  color:#efefef;
-  text-decoration:none;
+/*!TO BE FIXED!*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+{
+  color:#eee;
+  background-color:#a3a3b1 ;
 }
-
-.v-center {
-  margin-top:7%;
+.navbar
+{
+  margin-bottom:0px;
 }
-  
+.page-header
+{
+  background:url("http://img15.hostingpics.net/pics/201289headerbackground.png");
+  height:860px;
+  margin-top:0px;
+  padding:128px 32px 32px 64px;
+}
+.heading-title ,.heading-sub-title
+{
+  font-family: 'Sorts Mill Goudy', serif;
+  text-align:center;
+}
+.heading-title
+{
+  font-size:72px;
+}
+.heading-sub-title
+{
+   font-size:16px;
+}
