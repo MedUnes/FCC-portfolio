@@ -1,6 +1,9 @@
 .navbar-brand
 {
-  padding:0px 15px 0px 15px !important;
+ font-family: 'Lustria', serif;
+font-weight:bold;
+ color:23527c;
+
 }
 .navbar-default .navbar-nav>li>a:hover
 {
@@ -18,12 +21,20 @@
 {
   margin-bottom:0px;
 }
+.container-fluid
+{
+  padding:0px;
+}
 .page-header
 {
-  background:url("http://img15.hostingpics.net/pics/201289headerbackground.png");
-  height:860px;
+  height:600px;
   margin-top:0px;
-  padding:128px 32px 32px 64px;
+  margin-bottom:0px;
+  padding:100px 32px 32px 64px;
+}
+#heading
+{
+  background:url("http://img15.hostingpics.net/pics/201289headerbackground.png");
 }
 .heading-title ,.heading-sub-title
 {
@@ -38,6 +49,7 @@
 {
    font-size:16px;
   color:#23527c;
+  margin-bottom:90px;
 }
 .fa-6x
 {
@@ -47,7 +59,7 @@
 {
   padding-top:32px;
 }
-.round-anchor a:link
+.round-anchor a:link,.round-anchor a:active
 {
 	color:#444;
 }
@@ -55,9 +67,120 @@
 {
 	color:#23527c;
 }
-.round-anchor a:active
+#about
 {
-	color:#444;
+  background-color:#ddd;
+}
+#contact
+{
+  background-color:#23527c;
+  color:#eee;
+}
+#contact .heading-sub-title
+{
+  color:#ddd;
 }
 
+#contact button
+{
+  margin-right:30px;
+}
+#contact button:focus 
+{
+  outline:0 !important;
+}
+#footer
+{
+  text-align:center;
+  height:10%;
+  background-color:#333;
+  color:#ccc;
+  font-family: 'Lustria', serif;
+  padding:25px;
+}
+#footer a:link
+{
+  color:#eee;
+  font-size:18px;
+}
+#footer> i
+{
+  text-align:right;
+}
 
+.btn-portfolio { 
+  font-family: 'Sorts Mill Goudy', serif;
+  font-weight:bold;
+  padding:15px;
+  color:#23527c;
+  background-color: #aaa; 
+  border-color: #aaa; 
+  border-radius:25px;
+} 
+ 
+.btn-portfolio:hover, 
+.btn-portfolio:focus, 
+.btn-portfolio:active, 
+.btn-portfolio.active, 
+.open .dropdown-toggle.btn-portfolio { 
+ 
+  border-radius:25px;
+  color:#23527c;
+  background:#ddd;
+  border-color: #ddd;
+} 
+ 
+.btn-portfolio:active, 
+.btn-portfolio.active, 
+.open .dropdown-toggle.btn-portfolio { 
+  background-image: none; 
+  border-radius:25px;
+
+} 
+ 
+.btn-portfolio.disabled, 
+.btn-portfolio[disabled], 
+fieldset[disabled] .btn-portfolio, 
+.btn-portfolio.disabled:hover, 
+.btn-portfolio[disabled]:hover, 
+fieldset[disabled] .btn-portfolio:hover, 
+.btn-portfolio.disabled:focus, 
+.btn-portfolio[disabled]:focus, 
+fieldset[disabled] .btn-sample:focus, 
+.btn-portfolio.disabled:active, 
+.btn-portfolio[disabled]:active, 
+fieldset[disabled] .btn-portfolio:active, 
+.btn-portfolio.disabled.active, 
+.btn-portfolio[disabled].active, 
+fieldset[disabled] .btn-portfolio.active { 
+  background-color: #23527c; 
+  border-color: #23527c; 
+  border-radius:25px;
+} 
+ 
+.btn-portfolio .badge { 
+  color: #23527c; 
+  background-color: #fff;
+  border-radius:25px;
+
+}
+.modal-body,.modal-content,.modal-header
+{
+  background-color:#eee;
+  color: #23527c;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size:14px;
+   border-radius:25px;
+ }
+.modal-header
+{
+  font-size:16px;
+ }
+
+.modal-body
+{
+  padding:20px;
+  font-weight:bold;
+  font-size:32px;
+  text-align:center;
+}
