@@ -2,7 +2,7 @@
 	<head>
 		<!-- CSS -->
 		<link href='https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel='stylesheet' >
 		<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 		
 	    <link href='./styles.css' rel='stylesheet' type='text/css'>
@@ -12,11 +12,13 @@
 		<script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		
+		<script src="./scripts.js"></script>
+		
 	</head>
 	<body>
-		<nav id ="navbar" role="navigation" class="navbar navbar-default navbar-fixed-top">
+		<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
 			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
+			<div id="nav-bar" class="navbar-header">
 				<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
@@ -51,132 +53,143 @@
 					
 				</div>
 				
-				<div class="round-anchor text-center">
-					<a href="#about"><i class="fa fa-6x fa-arrow-circle-down"></i></a>
+				<div class="text-center">
+					<a href="#about">
+						<span class="round-anchor fa-stack fa-3x">
+							<i class="fa fa-circle-thin fa-stack-2x"></i>
+							<i class="fa fa-angle-double-down fa-stack-1x"></i>
+						</span>
+					</a>
 				</div>  
 			</div>
-			<div id="about" class="page-header">
-				<div id="title-sub-title">
-					<h1 class="heading-title">Mohamed YOUNES</h1>
-					<h4 class="heading-sub-title">System Progammer and Web developer</h4>
-					<div class="round-anchor text-center">
-						<a href="#portfolio"><i class="fa fa-6x fa-arrow-circle-down"></i></a>
-					</div>
-				</div>	
-			</div>
-			<div id="portfolio" class="page-header">
-				<div id="title-sub-title">
-					<h1 class="heading-title">My portfolio</h1>
-					<h4 class="heading-sub-title">parts of me..</h4>
-					<div class="round-anchor text-center">
-						<a href="#contact"><i class="fa fa-6x fa-arrow-circle-down"></i></a>
+		</div>
+		<div id="about" class="page-header">
+			<div id="title-sub-title">
+				<h1 class="heading-title">Mohamed YOUNES</h1>
+				<h4 class="heading-sub-title">System Progammer and Web developer</h4>
+				<div class="row content">
+					<div class="col-xs-8 col-xs-offset-2">
+						Hi, my name is Mohamed YOUNES, and I abreviate <strong>MedUnes</strong>.
 					</div>
 				</div>
+			</div>	
+		</div>
+		<div id="portfolio" class="page-header">
+			<div id="title-sub-title">
+				<h1 class="heading-title">My portfolio</h1>
+				<h4 class="heading-sub-title">parts of me..</h4>
+				
 			</div>
-			<div id="contact" class="page-header">
-				<div id="title-sub-title">
-					<h1 class="heading-title">Contact</h1>
-					<h4 class="heading-sub-title">I'm all ears..</h4>
-					<div class="row text-center">
-						<button class="btn btn-portfolio" data-toggle="modal" data-target="#phoneModal"><i class="fa fa-phone"></i>  Give me a call</button>
-						
-						<button class="btn btn-portfolio" data-toggle="modal" data-target="#mailModal"><i class="fa fa-at"></i>  Mail-me</button>
-						
-						<button class="btn btn-portfolio" data-toggle="modal" data-target="#letterModal"><i class="fa fa-envelope-o"></i>  Send me a letter</button>
-						
-						<button class="btn btn-portfolio" data-toggle="modal" data-target="#skypeModal"><i class="fa fa-skype"></i>  Let's skype</button>
-						
-						<button class="btn btn-portfolio" data-toggle="modal" data-target="#freelanceModal"><i class="fa fa-cc-paypal"></i> Hire me, Freelance!</button>
-					</div>
+		</div>
+		<div id="contact" class="page-header">
+			<div id="title-sub-title">
+				<h1 class="heading-title">Contact</h1>
+				<h4 class="heading-sub-title">I'm all ears..</h4>
+				<div class="row text-center">
+					<button class="btn btn-portfolio" data-toggle="modal" data-target="#phoneModal"><i class="fa fa-phone"></i>  Give me a call</button>
 					
+					<button class="btn btn-portfolio" data-toggle="modal" data-target="#mailModal"><i class="fa fa-at"></i>  Mail-me</button>
+					
+					<button class="btn btn-portfolio" data-toggle="modal" data-target="#letterModal"><i class="fa fa-envelope-o"></i>  Send me a letter</button>
+					
+					<button class="btn btn-portfolio" data-toggle="modal" data-target="#skypeModal"><i class="fa fa-skype"></i>  Let's skype</button>
+					
+					<button class="btn btn-portfolio" data-toggle="modal" data-target="#freelanceModal"><i class="fa fa-cc-paypal"></i> Hire me, Freelance!</button>
 				</div>
+				
 			</div>
-			<div id ="footer" class="page-header">
-				<div class="row">
-					<div class="text-center col-xs-10 col-xs-offset-1">
-						Designed & Coded by 
-						<a target ="_blank" href="http://www.medunes.net">MedUnes </a>
-					</div>
-					<div class="col-xs-1">
-						<a href="#navbar"><i class="fa fa-2x fa-arrow-circle-up"></i></a>
-					</div>
+		</div>
+		<div id ="footer" class="page-header">
+			<div class="row">
+				<div class="text-center col-xs-10 col-xs-offset-1">
+					Designed & Coded by 
+					<a target ="_blank" href="http://www.medunes.net">MedUnes </a>
+				</div>
+				<div class="col-xs-1">
+					<a href="#heading">
+						<span class="round-anchor fa-stack fa-1x">
+							<i class="fa fa-circle-thin fa-stack-2x"></i>
+							<i class="fa fa-angle-double-up fa-stack-1x"></i>
+						</span>
+					</a>
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" id="phoneModal" tabindex="-1" role="dialog" aria-labelledby="phoneModal">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title"><i class="fa fa-phone"></i> Give me a call</h4>
-					</div>
-					<div class="modal-body">
-						(+216)96 390 001
-					</div>
+	</div>
+	<div class="modal fade" id="phoneModal" tabindex="-1" role="dialog" aria-labelledby="phoneModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title"><i class="fa fa-phone"></i> Give me a call</h4>
+				</div>
+				<div class="modal-body">
+					(+216)96 390 001
 				</div>
 			</div>
 		</div>
-		
-		<div class="modal fade" id="mailModal" tabindex="-1" role="dialog" aria-labelledby="mailModal">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title"><i class="fa fa-at"></i> Mail me</h4>
-					</div>
-					<div class="modal-body">
-						mohamed.younes@yandex.com
-					</div>
+	</div>
+	
+	<div class="modal fade" id="mailModal" tabindex="-1" role="dialog" aria-labelledby="mailModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title"><i class="fa fa-at"></i> Mail me</h4>
+				</div>
+				<div class="modal-body">
+					mohamed.younes@yandex.com
 				</div>
 			</div>
 		</div>
-		
-		<div class="modal fade" id="letterModal" tabindex="-1" role="dialog" aria-labelledby="letterModal">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title"><i class="fa fa-envelope-o"></i> Send me a letter</h4>
-					</div>
-					<div class="modal-body">
-						03 RUE SANHAJA KHEZAMA EST 4051 SOUSSE
-					</div>
+	</div>
+	
+	<div class="modal fade" id="letterModal" tabindex="-1" role="dialog" aria-labelledby="letterModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title"><i class="fa fa-envelope-o"></i> Send me a letter</h4>
+				</div>
+				<div class="modal-body">
+					03 RUE SANHAJA KHEZAMA EST 4051 SOUSSE
 				</div>
 			</div>
 		</div>
-		
-		<div class="modal fade" id="skypeModal" tabindex="-1" role="dialog" aria-labelledby="skypeModal">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title"><i class="fa fa-skype"></i>Let's skype</h4>
-					</div>
-					<div class="modal-body">
-						medunes83
-					</div>
+	</div>
+	
+	<div class="modal fade" id="skypeModal" tabindex="-1" role="dialog" aria-labelledby="skypeModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title"><i class="fa fa-skype"></i>Let's skype</h4>
+				</div>
+				<div class="modal-body">
+					medunes83
 				</div>
 			</div>
 		</div>
-		
-		<div class="modal fade" id="freelanceModal" tabindex="-1" role="dialog" aria-labelledby="freelanceModal">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title"><i class="fa fa-cc-paypal"></i> Hire me Freelance</h4>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-xs-6 text-right">
-								<a target="_blank" href="https://www.upwork.com/freelancers/~01d799c0469b4d4a4a">
-									<img src="http://www.notbeinggoverned.com/wp-content/uploads/2015/07/Upwork-logo.svg_.png" alt="UpWork Logo"></img>
-								</a>
-							</div>
-							<div class="col-xs-6 text-center">
-								<a target="_blank" href="http://www.guru.com/freelancers/mohamed-younes">
-									<img src="http://www.phixdata.com/wp-content/uploads/2016/03/guru-freelancer-top-5-market-place-online-Pixel-Data-Interactive.png" alt="Guru Logo"></img>
-								</a>
-							</div>
+	</div>
+	
+	<div class="modal fade" id="freelanceModal" tabindex="-1" role="dialog" aria-labelledby="freelanceModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title"><i class="fa fa-cc-paypal"></i> Hire me Freelance</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-xs-6 text-right">
+							<a target="_blank" href="https://www.upwork.com/freelancers/~01d799c0469b4d4a4a">
+								<img src="http://www.notbeinggoverned.com/wp-content/uploads/2015/07/Upwork-logo.svg_.png" alt="UpWork Logo"></img>
+							</a>
+						</div>
+						<div class="col-xs-6 text-center">
+							<a target="_blank" href="http://www.guru.com/freelancers/mohamed-younes">
+								<img src="http://www.phixdata.com/wp-content/uploads/2016/03/guru-freelancer-top-5-market-place-online-Pixel-Data-Interactive.png" alt="Guru Logo"></img>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>	
-	</body>	
+		</div>
+	</div>
+</body>	
 </html>																				
