@@ -20,6 +20,8 @@ font-weight:bold;
 .navbar
 {
   margin-bottom:0px;
+  opacity:0.85;
+  background-color:#eee;
 }
 .container-fluid
 {
@@ -182,5 +184,14 @@ fieldset[disabled] .btn-portfolio.active {
   padding:20px;
   font-weight:bold;
   font-size:32px;
-  text-align:center;
+  text-align:center !important;
+}
+.modal-body img
+{
+  height:64px;
+  width:128px;
+  border:solid 2px #ddd;
+  border-radius:20px;
+  padding:10px;
+  opacity:0.7;
 }
