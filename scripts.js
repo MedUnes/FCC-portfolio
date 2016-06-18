@@ -9,4 +9,10 @@ $( document ).ready(function() {
         }, function () {
         $(this).stop().animate({"color":"#23527c","background-color":"#aaa","border-color": "#aaa"}, 600);
     });
+  
+  $('img').hover(function() {
+        $(this).stop().animate({"opacity":1}, 300);
+        }, function () {
+        $(this).stop().animate({"opacity":0.7}, 300);
+    });
   });
