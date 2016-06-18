@@ -16,3 +16,10 @@ $( document ).ready(function() {
         $(this).stop().animate({"opacity":0.7}, 300);
     });
   });
+
+ $('.round-anchor').hover(function() {
+        $(this).stop().animate({"color":"#eee"}, 300);
+        }, function () {
+        $(this).stop().animate({"color":"#ccc"}, 300);
+
+  });
